@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: bold;
+
+}
+#box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 32rem;
+    height: 60rem;
+    background-color:black ;
+    border-radius: 3rem;
+    
+}
+#box #display{
+    
+    width: 100%;
+    height: 35%;
+}
+
+
+
+#box #buttons{
+    
+    width: 100%;
+    height: 65%;
+
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr) ;
+   
+    
+ 
+    
+}
+#box #buttons button{
+    margin: .7rem;
+    border: none;
+    font-size: 2rem;
+    
+    
+
+}
+
+
+
+#AC, #b7, #b4, #b1, #plusmin, #b6, #b5, #b2, #perc, #b5, #b6, #b3, #com, #div, #mult, #subs, #sum, #equ {
+    border-radius: 100%;
+}
+
+
+#buttons #b0{
+    grid-column: 1 / 3 ;
+    border-radius: 3rem;
+    
+}
+
+
+#buttons .grey{
+    background-color: rgb(220,220,220);
+    color: black;
+}
+
+#buttons .grey:hover{
+    
+    background-color: rgb(242, 240, 240)
+
+}
+
+
+#buttons .operator{
+    background-color: rgb(255,140,0) ;
+    color: white;
+}
+#buttons .operator:hover{
+    
+    background-color: rgb(255, 123, 0) ;
+
+}
+
+#buttons .num{
+    background-color: rgb(105,105,105);
+    color: white;
+}
+
+#buttons .num:hover{
+    
+    background-color: rgb(118, 117, 117);
+
+}
+
+#display{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    font-size: 120px;
+    color: white;
+    
+}
+#display #text{
+    margin-right: 2rem;
+}
+
+
+
+    
